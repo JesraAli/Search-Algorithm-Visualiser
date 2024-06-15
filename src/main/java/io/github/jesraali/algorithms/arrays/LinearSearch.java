@@ -11,7 +11,8 @@ public class LinearSearch {
     }
 
     public int run() {
-        for (int i = 0; i != searchValue; i++) {
+        //Does two comparisons, checks if i < array length AND if array[i] is a search value
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == searchValue) {
                 return i;
             }
