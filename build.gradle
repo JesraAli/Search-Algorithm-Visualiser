@@ -12,6 +12,8 @@ repositories {
     mavenCentral()
 }
 
+mainClassName = "io.github.jesraali.Main"
+
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
@@ -24,7 +26,7 @@ test {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'org.example.Main'
+                'Main-Class': 'io.github.jesraali.Main'
         )
     }
 }
