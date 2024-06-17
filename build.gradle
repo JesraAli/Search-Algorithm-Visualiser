@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
 }
 
 group = 'org.example'
@@ -7,6 +9,8 @@ version = '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'application'
+
+applicationDefaultJvmArgs = ['--module-path=lib/javafx.base.jar','--add-modules=javafx.controls']
 
 repositories {
     mavenCentral()
@@ -17,6 +21,11 @@ mainClassName = "io.github.jesraali.Main"
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+javafx {
+    version = "21.0.3"
+    modules = [ 'javafx.controls', 'javafx.fxml']
 }
 
 test {
