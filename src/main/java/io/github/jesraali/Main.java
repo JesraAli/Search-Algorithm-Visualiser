@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 import io.github.jesraali.algorithms.arrays.*;
@@ -19,7 +20,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/Screen1.fxml"));
-        AnchorPane rootLayout = fxmlLoader.load();
+        StackPane rootLayout = fxmlLoader.load();
 
         Scene scene = new Scene(rootLayout, 800, 600);
         stage.setScene(scene);
