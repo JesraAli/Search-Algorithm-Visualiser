@@ -1,4 +1,3 @@
-/* Reset default styles and apply basic styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -70,7 +69,7 @@ header h1 {
     background-color: #449d44;
 }
 
-/* Adjusted position for options button */
+/* Options Button*/
 .options-toggle {
     margin-left: 10px;
 }
@@ -84,32 +83,31 @@ main {
     padding: 20px;
 }
 
-/* Visual panel */
 .visual-panel {
     width: 100%;
-    height: 600px; /* Adjust height as needed */
+    height: 600px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     padding: 20px;
-    overflow: auto; /* Enable scrolling if necessary */
+    overflow: auto;
 }
 
 /* Options panel */
 aside.options-panel {
-    width: 400px; /* Adjust width as needed */
+    width: 400px;
     background-color: #fff;
     border-right: 1px solid #ccc;
     padding: 20px;
     position: absolute;
-    left: -400px; /* Initial position off-screen */
+    left: -400px; /* Starting position off-screen */
     top: 60px;
-    height: calc(100% - 60px); /* Full height minus header */
-    overflow-y: auto; /* Add vertical scrollbar */
+    height: calc(100% - 60px); /* Height is full height - header */
+    overflow-y: auto; /* Vertical scrollbar */
     transition: left 0.3s ease; /* Smooth slide transition */
 }
 
 .options-panel.open {
-    left: 10px; /* Slide in when open */
+    left: 10px;
 }
 
 .options-panel h2 {
@@ -154,7 +152,6 @@ aside.options-panel {
     background-color: #449d44;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -167,11 +164,11 @@ aside.options-panel {
         border-bottom: 1px solid #ccc;
         padding: 10px;
         left: 0;
-        height: auto; /* Remove fixed height */
+        height: auto;
     }
 
     .visual-panel {
-        height: 400px; /* Adjust height as needed */
+        height: 400px;
     }
 
     .header-buttons {

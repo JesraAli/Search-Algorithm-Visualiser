@@ -15,7 +15,7 @@
     </header>
     <main>
         <div class="visual-panel">
-            <!-- Visualisation content goes here -->
+            <!-- Visualisation content here -->
             <p>Time Elapsed: <span id="time-elapsed">0 ms</span></p>
         </div>
     </main>
@@ -41,7 +41,6 @@
         </div>
         <div class="option-section">
             <h3>Quantum Algorithms</h3>
-            <!-- Add quantum algorithms here -->
         </div>
         <div class="option-section">
             <h3>Array Type</h3>
