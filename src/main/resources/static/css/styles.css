@@ -69,10 +69,10 @@ header h1 {
     background-color: #449d44;
 }
 
-/* Options Button*/
-.options-toggle {
-    margin-left: 10px;
-}
+/*!* Options Button*!*/
+/*.options-toggle {*/
+/*    margin-left: 10px;*/
+/*}*/
 
 /* Main section */
 main {
@@ -100,7 +100,7 @@ aside.options-panel {
     padding: 20px;
     position: absolute;
     left: -400px; /* Starting position off-screen */
-    top: 60px;
+    top: 69px;
     height: calc(100% - 60px); /* Height is full height - header */
     overflow-y: auto; /* Vertical scrollbar */
     transition: left 0.3s ease; /* Smooth slide transition */
@@ -178,4 +178,17 @@ aside.options-panel {
     .visualise-button {
         margin-top: 10px;
     }
+}
+
+/* Custom input styling */
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+/* Placeholder text styling */
+input[type="text"]::placeholder {
+    color: #999;
 }
